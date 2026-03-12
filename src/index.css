@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+/* -------- DESIGN SYSTEM -------- */
+
+:root{
+  --background:#1C1F26;
+  --foreground:#EDE8DF;
+  --card:#242833;
+  --accent:#CC7750;
+  --muted:#9AA0AA;
+  --border:#323744;
+}
+/* -------- GLOBAL STYLES -------- */
+
+body{
+  background:var(--background);
+  color:var(--foreground);
+  font-family:'DM Sans', sans-serif;
+}
+
+h1,h2,h3,h4{
+  font-family:'Space Grotesk', sans-serif;
+}
+
+/* Card styling */
+.card{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:24px;
+}
+
+/* Muted text */
+.muted{
+  color:var(--muted);
+}
+
+/* Accent buttons */
+.btn-primary{
+  background:var(--accent);
+  color:white;
+  padding:12px 20px;
+  border-radius:8px;
+}
+
+.btn-outline{
+  border:1px solid var(--accent);
+  padding:12px 20px;
+  border-radius:8px;
+}
+
+html{
+  scroll-behavior:smooth;
+}
